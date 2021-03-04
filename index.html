@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style1.css" />
+<script src="JS.js"></script>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="Laba(event, 'Home')">HOME</button>
+  <button class="tablinks" onclick="Laba(event, '1')">Lab 1</button>
+  <button class="tablinks" onclick="Laba(event, '2')">Lab 2</button>
+  <button class="tablinks" onclick="Laba(event, '3')">Lab 3</button>
+  <button class="tablinks" onclick="Laba(event, '4')">Lab 4</button>
+  <button class="tablinks" onclick="Laba(event, '5')">Lab 5</button>
+  <button class="tablinks" onclick="Laba(event, '6')">Lab 6</button>
+  <button class="tablinks" onclick="Laba(event, '7')">Lab 7</button>
+  <button class="tablinks" onclick="Laba(event, '8')">Lab 8</button>
+  <button class="tablinks" onclick="Laba(event, '9')">Lab 9</button>
+</div>
+<div id="box1" class="containerTab" style="display:none; background:rgb(56, 140, 236)">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <p> 1. Об'єктом автоматизації є моделювання роботи інтернет-форуму;</p>
+    <p> 2. Користувач створює гілку в якій може писати свої думки на будь яку тему;</p>
+    <p> 3. На сайті можна знайти гілки інших користувачів;</p>
+    <p> 4. Зайшовши на гілку іншого користувача можна добавити коментарій;</p>
+    <p> 5. Можливість реєстрації модератором;</p>
+    <p> 6. Модератор має можливість видаляти користувача та\або гілку форума;</p>
+    <p> 7. Користувач має можливість ставити 18+ на свою гілку;</p>
+    <p> 8. Користувач має можливість видаляти свою гілку форума;</p>
+    <p> 9. Адміністратор може добавляти або видавляти модераторів.</p>
+   
+</div>
+<div id="box2" class="containerTab" style="display:none; background:rgb(130, 180, 238)">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <p>	1. Створення форума для обговорення різних тем. </p>
+    <p> 2. Спосіб комунікації людей в карантин </p>
+    <p> 3. Об.єднання людей яукі цікавляться певною темою  </p>
+</div>
+<div id="box3" class="containerTab" style="display:none; background:rgb(130, 180, 238)">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <p> 1. Створення гілки  </p>
+    <p> 2. Перегляд різних гілок  </p>
+    <p> 3. Редагування гілок  </p>
+    <p> 4. Видалення гілок  </p>
+</div>
+<div id="box4" class="containerTab" style="display:none; background:rgb(130, 180, 238)">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <p> 1. Показати список гілок</p>
+    <p> 2.  Показати контент певної гілки</p>
+    <p> 3. Показ коментарів інших користувачів</p>
+</div>
+<div id="box5" class="containerTab" style="display:none; background:rgb(130, 180, 238)">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <p> 1. Користувач реєструється на форумі </p>
+    <p> 2. Користувач створює свою гілку </p>
+    <p> 3. Користувач публікує свою гілку </p>
+    <p> 4. Користувач редагує гілку </p>
+    <p> 5. Користувач шукає гілки інших користувачів </p>
+    <p> 6.Користувач коментує інші гілки </p>
+    <p> 7. Модератор редагує\видаляє гілки </p>
+    <p> 8. Модератор видаляє користувачів </p>
+    <p> 9. Админ добавляє\видаляє модераторів </p>
+</div>
+<div id="box6" class="containerTab" style="display:none; background:rgb(130, 180, 238)">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <p>	
+</div>
+<div id="box7" class="containerTab" style="display:none; background:rgb(130, 180, 238)">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <p>	
+</div>
+<div id="box8" class="containerTab" style="display:none; background:rgb(130, 180, 238)">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <p>	
+</div>
+<div id="box9" class="containerTab" style="display:none; background:rgb(130, 180, 238)">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <p>
+</div>
+
+
+<div id="Home" class="tabcontent">
+    <p>It's empty... Too empty.</p>
+</div>
+
+
+<div id="1" class="tabcontent">
+    <div class="dropdown" >
+        <button class="dropbtn" >1. Характеристика об'єкта автоматизації</button>
+          <div class="dropdown-content">
+            <div class="column" onclick="openTab('box1');">
+           <a href="#"> 1.1 Опис об'єкту управління</a>
+            </div>
+          </div>
+          <div class="dropdown-content">
+            <div class="column" onclick="openTab('box2');">
+              <a href="#">1.2 Мета розробки проекту</a>
+           </div>
+          </div>
+          <div class="dropdown-content">
+            <div class="column" onclick="openTab('box3');">
+              <a href="#">1.3 Бізнес-задачі</a>
+             </div>
+          </div>
+          <div class="dropdown-content">
+            <div class="column" onclick="openTab('box4');">
+              <a href="#">1.4 Бізнес-процеси</a>
+             </div>
+          </div>
+          <div class="dropdown-content">
+            <div class="column" onclick="openTab('box5');">
+              <a href="#">1.5 Сценаріх дії системи</a>
+             </div>   
+            </div>
+        </div>
+        
+        <div class="dropdown">
+          <button class="dropbtn">2. Об'єктно-орієнтований аналіз</button>
+          <div class="dropdown-content">
+            <div class="column" onclick="openTab('box6');">
+          <a href="#">1.5 Сценаріх дії системи</a>
+            </div>   
+          </div>
+          <div class="dropdown-content">
+            <div class="column" onclick="openTab('box7');">
+          <a href="#">1.5 Сценаріх дії системи</a>
+            </div>   
+          </div>
+          <div class="dropdown-content">
+            <div class="column" onclick="openTab('box8');">
+          <a href="#">1.5 Сценаріх дії системи</a>
+            </div>   
+          </div>
+          <div class="dropdown-content">
+            <div class="column" onclick="openTab('box9');">
+          <a href="#">1.5 Сценаріх дії системи</a>
+            </div>   
+          </div>
+        </div>
+        
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">3. Об'єктно-орієнтоване проектування</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">4. Кодування об'єкта по версіях</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">5. Впровадженя та супроводження ПЗ</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1s</a>
+            <a href="#">Link 2s</a>
+            <a href="#">Link 3s</a>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div id="2" class="tabcontent">
+  <h3>Lab 2</h3>
+  <p>It's empty... Too empty.</p>
+</div>
+
+<div id="3" class="tabcontent">
+    <h3>Lab 3</h3>
+    <p>It's empty... Too empty.</p>
+</div>
+
+<div id="4" class="tabcontent">
+    <h3>Lab 4</h3>
+    <p>It's empty... Too empty.</p>
+</div>
+
+<div id="5" class="tabcontent">
+    <h3>Lab 5</h3>
+    <p>It's empty... Too empty.</p>
+</div>
+
+<div id="6" class="tabcontent">
+    <h3>Lab 6</h3>
+    <p>It's empty... Too empty.</p>
+</div>
+
+<div id="7" class="tabcontent">
+    <h3>Lab 7</h3>
+    <p>It's empty... Too empty.</p>
+</div>
+
+<div id="8" class="tabcontent">
+    <h3>Lab 8</h3>
+    <p>It's empty... Too empty.</p>
+</div>
+
+<div id="9" class="tabcontent">
+    <h3>Lab 9</h3>
+    <p>It's empty... Too empty.</p>
+</div>
+
+     
+</body>
+</html> 
+
+
+
